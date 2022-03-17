@@ -1,10 +1,9 @@
 import React, { useCallback } from "react";
-import { Link } from "react-router-dom";
-import { Route } from "react-router-dom";
+
 import { useHistory, Redirect } from "react-router-dom";
-import Dashboard from "./Dashboard";
+
 import MainPage from "./MainPage";
-import WordCloud from "react-d3-cloud";
+
 import { useDispatch } from "react-redux";
 import { setOptions } from "../features/dashboardSlice";
 

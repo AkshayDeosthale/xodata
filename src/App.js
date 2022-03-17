@@ -6,7 +6,7 @@ import TaskOne from "./routes/TaskOne";
 import TaskTwo from "./routes/TaskTwo";
 import Header from "./routes/Header";
 import MainPage from "./routes/MainPage";
-import WordCloud from "react-d3-cloud";
+
 import Dashboard from "./routes/Dashboard";
 import { useHistory } from "react-router-dom";
 
@@ -29,6 +29,5 @@ function App() {
     </div>
   );
 }
-const rootElement = document.getElementById("root");
 
 export default App;

@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import { useHistory } from "react-router-dom";
-import { Link } from "react-router-dom";
+
 import MainPage from "./MainPage";
 import { useDispatch } from "react-redux";
 import { setOptions } from "../features/dashboardSlice";

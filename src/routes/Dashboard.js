@@ -1,7 +1,7 @@
-import React, { useCallback } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import Gauge from "./Gauge";
-import Header from "./Header";
+
 import { withRouter } from "react-router-dom";
 
 const Dashboard = ({ history }) => {
