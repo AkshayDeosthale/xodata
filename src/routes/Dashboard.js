@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { useSelector } from "react-redux";
 import Gauge from "./Gauge";
 import Header from "./Header";
+import { withRouter } from "react-router-dom";
 
-const Dashboard = () => {
+const Dashboard = ({ history }) => {
   const info = useSelector((state) => state.info.value);
+
+  // const handleBack = useCallback(() => history.push("/"), [history]);
+
+  // const handleOnClick = () => {
+  //   console.log(history.location.pathname);
+  //   handleBack();
+  // };
 
   return (
     <div className="w-screen flex flex-col items-center justify-center space-y-5 sm:space-y-9 ">
+      {/* <button onClick={handleOnClick}>back</button> */}
       <div className="  mt-[2rem]   sm:mt-[5rem] space-y-2 sm:space-y-5">
         <div className=" font-bold text-2xl ">
           <span>Material : {info.material}</span>
@@ -115,4 +124,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default withRouter(Dashboard);

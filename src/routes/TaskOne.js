@@ -8,7 +8,7 @@ import WordCloud from "react-d3-cloud";
 import { useDispatch } from "react-redux";
 import { setOptions } from "../features/dashboardSlice";
 
-const Expenses = () => {
+const TaskOne = () => {
   const history = useHistory();
   const handleOnClick = useCallback(
     () => history.push("/dashboard"),
@@ -85,4 +85,4 @@ const Expenses = () => {
   );
 };
 
-export default Expenses;
+export default TaskOne;
