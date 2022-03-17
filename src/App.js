@@ -17,8 +17,8 @@ function App() {
       </div>
 
       <Route exact path="/" render={() => <MainPage />} />
-      <Route exact path="/expenses" render={() => <Expenses />} />
-      <Route exact path="/invoices" render={() => <TaskTwo />} />
+      <Route exact path="/taskone" render={() => <Expenses />} />
+      <Route exact path="/tasktwo" render={() => <TaskTwo />} />
       <Route exact path="/dashboard" render={() => <Dashboard />} />
     </div>
   );

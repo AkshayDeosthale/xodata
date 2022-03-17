@@ -1,16 +1,19 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import Gauge from "./Gauge";
 import Header from "./Header";
 
 const Dashboard = () => {
+  const info = useSelector((state) => state.info.value);
+
   return (
     <div className="w-screen flex flex-col items-center justify-center space-y-5 sm:space-y-9 ">
       <div className="  mt-[2rem]   sm:mt-[5rem] space-y-2 sm:space-y-5">
         <div className=" font-bold text-2xl ">
-          <span>Material : Flange Blind</span>
+          <span>Material : {info.material}</span>
         </div>
         <div className="font-bold text-2xl ">
-          <span>Run ID : 1</span>
+          <span>Run ID : {info.runID}</span>
         </div>
         <div className="flex justify-between">
           <span>Number of records proccessed</span>

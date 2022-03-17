@@ -6,7 +6,6 @@ const MainPage = () => {
 
   const handleClick = () => {
     setVisible(!visible);
-    console.log("clicked", visible);
   };
 
   return (
@@ -45,7 +44,7 @@ const MainPage = () => {
             <ul className="py-1" aria-labelledby="dropdownButton">
               <li>
                 <Link
-                  to="/expenses"
+                  to="/taskone"
                   className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >
                   Run = 1
@@ -53,7 +52,7 @@ const MainPage = () => {
               </li>
               <li>
                 <Link
-                  to="/invoices"
+                  to="/tasktwo"
                   className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >
                   Run = 2

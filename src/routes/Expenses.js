@@ -5,6 +5,8 @@ import { useHistory, Redirect } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import MainPage from "./MainPage";
 import WordCloud from "react-d3-cloud";
+import { useDispatch } from "react-redux";
+import { setOptions } from "../features/dashboardSlice";
 
 const Expenses = () => {
   const history = useHistory();
@@ -19,10 +21,26 @@ const Expenses = () => {
   //   { text: "No prod mapped", value: 800000 },
   // ];
 
+  const dispatch = useDispatch();
+
+  const handleOnClickFlangeBlind = () => {
+    dispatch(setOptions({ material: "Flange Blind", runID: 1 }));
+    handleOnClick();
+  };
+
+  const handleOnClickFlange = () => {
+    dispatch(setOptions({ material: "Flange", runID: 1 }));
+    handleOnClick();
+  };
+  const handleOnClickNoProd = () => {
+    dispatch(setOptions({ material: "No prod", runID: 1 }));
+    handleOnClick();
+  };
+
   return (
     <div className="flex flex-col w-screen  space-y-5 justify-center items-center">
       <MainPage />
-      <h1>Task One</h1>
+      <h1 className="font-extrabold">Task One</h1>
       {/* <div>
         <WordCloud
           data={data}
@@ -40,7 +58,7 @@ const Expenses = () => {
         <button
           type="button"
           className=" w-52  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          onClick={handleOnClick}
+          onClick={handleOnClickFlangeBlind}
         >
           Flange blind
         </button>
@@ -49,7 +67,7 @@ const Expenses = () => {
         <button
           type="button"
           className="w-52  text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-          onClick={handleOnClick}
+          onClick={handleOnClickFlange}
         >
           Flange
         </button>
@@ -58,7 +76,7 @@ const Expenses = () => {
         <button
           type="button"
           className="w-52 text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900"
-          onClick={handleOnClick}
+          onClick={handleOnClickNoProd}
         >
           No prod mapped
         </button>
