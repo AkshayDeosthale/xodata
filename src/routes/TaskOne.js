@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 
-import { useHistory, Redirect } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import MainPage from "./MainPage";
 

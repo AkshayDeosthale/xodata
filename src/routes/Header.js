@@ -17,7 +17,7 @@ const Header = () => {
             onClick={handleOnClick}
             className="flex justify-center items-center"
           >
-            <img src="/home.svg" /> Home
+            <img src="/home.svg" alt="Home" /> Home
           </button>
         </span>
         <span>
@@ -26,7 +26,7 @@ const Header = () => {
             onClick={handleOnClick}
             className="flex justify-center items-center"
           >
-            <img src="/plus.svg" />
+            <img src="/plus.svg" alt="plus" />
             Add
           </button>
         </span>
@@ -36,7 +36,7 @@ const Header = () => {
             onClick={handleOnClick}
             className="flex justify-center items-center"
           >
-            <img src="/que.svg" />
+            <img src="/que.svg" alt="que" />
             About
           </button>
         </span>
