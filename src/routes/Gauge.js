@@ -5,7 +5,7 @@ const Gauge = ({ percent }) => {
   return (
     <div className="">
       <div>
-        <GaugeChart id="gauge-chart1" nrOfLevels={5} percent={percent} />
+        <GaugeChart id="gauge-chart1" nrOfLevels={5} percent={percent / 100} />
       </div>
     </div>
   );

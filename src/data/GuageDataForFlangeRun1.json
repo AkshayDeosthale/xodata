@@ -1,0 +1,149 @@
+{
+    "data": {
+        "Data Accuracy": {
+            "chart": [
+                "% of Normalized"
+            ],
+            "data": {
+                "% of Correct Rec": {
+                    "type": "pct",
+                    "value": "0.0"
+                },
+                "% of Normalized": {
+                    "type": "pct",
+                    "value": "27.0"
+                },
+                "Number of correct records": {
+                    "type": "number",
+                    "value": "0"
+                },
+                "Number of records": {
+                    "type": "number",
+                    "value": "10"
+                },
+                "Number of words normalized": {
+                    "type": "number",
+                    "value": "21"
+                },
+                "Number of words processed": {
+                    "type": "number",
+                    "value": "78"
+                }
+            },
+            "data_seq": {
+                "1": "% of Normalized",
+                "2": "Number of words normalized",
+                "3": "Number of words processed",
+                "4": "% of Correct Rec",
+                "5": "Number of correct records",
+                "6": "Number of records"
+            }
+        },
+        "Data Completeness": {
+            "chart": [
+                "% of Completeness"
+            ],
+            "data": {
+                "% of Completeness": {
+                    "type": "pct",
+                    "value": "28.0"
+                },
+                "Number of attributes for product": {
+                    "type": "number",
+                    "value": "120"
+                },
+                "Number of missing attributes": {
+                    "type": "number",
+                    "value": "87"
+                }
+            },
+            "data_seq": {
+                "1": "% of Completeness",
+                "2": "Number of attributes for product",
+                "3": "Number of missing attributes"
+            }
+        },
+        "Data Conformance": {
+            "chart": [
+                "% of Conformance"
+            ],
+            "data": {
+                "% of Conformance": {
+                    "type": "pct",
+                    "value": "66.0"
+                },
+                "Mapped ,but not Mapped to Attribute": {
+                    "type": "number",
+                    "value": "6"
+                },
+                "Number of Mapped Words": {
+                    "type": "number",
+                    "value": "21"
+                },
+                "Number of Words": {
+                    "type": "number",
+                    "value": "32"
+                },
+                "Number of not Mapped Words": {
+                    "type": "number",
+                    "value": "57"
+                }
+            },
+            "data_seq": {
+                "1": "% of Conformance",
+                "2": "Number of Mapped Words",
+                "3": "Number of not Mapped Words",
+                "4": "Number of Words",
+                "5": "Mapped ,but not Mapped to Attribute"
+            }
+        },
+        "Data Statistics": {
+            "chart": [],
+            "data": {
+                "Number of attributes processed": {
+                    "type": "number",
+                    "value": "33"
+                },
+                "Number of records processed": {
+                    "type": "number",
+                    "value": "10"
+                }
+            },
+            "data_seq": {
+                "1": "Number of records processed",
+                "2": "Number of attributes processed"
+            }
+        },
+        "Data Uniqueness": {
+            "chart": [
+                "% of Uniqueness"
+            ],
+            "data": {
+                "% of Uniqueness": {
+                    "type": "pct",
+                    "value": "100.0"
+                },
+                "Number of unique records after normalization": {
+                    "type": "number",
+                    "value": "10"
+                },
+                "Number of unique records before normalization": {
+                    "type": "number",
+                    "value": "10"
+                }
+            },
+            "data_seq": {
+                "1": "% of Uniqueness",
+                "2": "Number of unique records after normalization",
+                "3": "Number of unique records before normalization"
+            }
+        }
+    },
+    "data_seq": {
+        "1": "Data Statistics",
+        "2": "Data Completeness",
+        "3": "Data Accuracy",
+        "4": "Data Uniqueness",
+        "5": "Data Conformance"
+    }
+}

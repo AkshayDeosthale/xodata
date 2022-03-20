@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import data from "../data/runidsDropdown.json";
 
 const MainPage = () => {
   const [visible, setVisible] = useState(false);
 
   const handleClick = () => {
+    console.log(data[0].display);
     setVisible(!visible);
   };
 
@@ -47,7 +49,7 @@ const MainPage = () => {
                   to="/taskone"
                   className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >
-                  Run = 1
+                  {data[0].display}
                 </Link>
               </li>
               <li>
@@ -55,7 +57,7 @@ const MainPage = () => {
                   to="/tasktwo"
                   className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >
-                  Run = 2
+                  {data[1].display}
                 </Link>
               </li>
             </ul>
