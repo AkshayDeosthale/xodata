@@ -22,7 +22,7 @@ const GaugeInfo = ({ name, percent }) => {
           <Gauge percent={per} />
         </div>
         <div>
-          <div className="flex justify-between flex-col space-y-2">
+          <div className="flex justify-between flex-col space-y-1">
             {Object.entries(details).map(([key, value]) => (
               <p className="flex justify-between  space-x-5" key={key}>
                 <span>{key}</span> <span>{value.value}</span>
