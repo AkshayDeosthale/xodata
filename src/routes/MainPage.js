@@ -25,7 +25,10 @@ const MainPage = () => {
           <DropdownMenu>
             {data.map((run, i) => (
               <DropdownItem key={i}>
-                <Link to={run.value === 1 ? "/taskone" : "/tasktwo"}>
+                <Link
+                  to={run.value === 1 ? "/taskone" : "/tasktwo"}
+                  className="font-semibold"
+                >
                   {run.display}
                 </Link>
               </DropdownItem>
