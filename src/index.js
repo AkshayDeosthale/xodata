@@ -5,6 +5,7 @@ import App from "./App";
 import "flowbite";
 import { store } from "./store";
 import { Provider } from "react-redux";
+import "bootstrap/dist/css/bootstrap.css";
 
 import { BrowserRouter } from "react-router-dom";
 

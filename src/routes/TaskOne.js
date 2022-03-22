@@ -6,6 +6,11 @@ import MainPage from "./MainPage";
 
 import { useDispatch } from "react-redux";
 import { setOptions } from "../features/dashboardSlice";
+import Words from "./Words";
+
+import WordCloud from "react-d3-cloud";
+import data from "../data/WordCloudRunid1.json";
+import { render } from "react-dom";
 
 const TaskOne = () => {
   const history = useHistory();
@@ -13,12 +18,6 @@ const TaskOne = () => {
     () => history.push("/dashboard"),
     [history]
   );
-
-  // const data = [
-  //   { text: "Flange blind", value: 100000 },
-  //   { text: "Flange", value: 200000 },
-  //   { text: "No prod mapped", value: 800000 },
-  // ];
 
   const dispatch = useDispatch();
 
@@ -40,18 +39,6 @@ const TaskOne = () => {
     <div className="flex flex-col w-screen  space-y-5 justify-center items-center">
       <MainPage />
       <h1 className="font-extrabold">Task One</h1>
-      {/* <div>
-        <WordCloud
-          data={data}
-          width={500}
-          height={500}
-          font="Times"
-          fontStyle="italic"
-          fontWeight="bold"
-          onWordClick={handleOnClick}
-          rotate={(word) => word.value % 360}
-        />
-      </div> */}
 
       <div className="">
         <button
@@ -80,6 +67,14 @@ const TaskOne = () => {
           No prod mapped
         </button>
       </div>
+
+      {/* <div>
+        <Words />
+        {render(
+          <WordCloud data={data} width={300} height={300} fontSize={5} />,
+          document.getElementById("root")
+        )}
+      </div> */}
     </div>
   );
 };
