@@ -6,6 +6,7 @@ import MainPage from "./MainPage";
 
 import { useDispatch } from "react-redux";
 import { setOptions } from "../features/dashboardSlice";
+import ReactWordcloud from "react-wordcloud";
 import Words from "./Words";
 
 import WordCloud from "react-d3-cloud";
@@ -38,7 +39,7 @@ const TaskOne = () => {
   return (
     <div className="flex flex-col w-screen  space-y-5 justify-center items-center">
       <MainPage />
-      <h1 className="font-extrabold">Task One</h1>
+      {/* <h1 className="font-extrabold">Task One</h1>
 
       <div className="">
         <button
@@ -66,15 +67,12 @@ const TaskOne = () => {
         >
           No prod mapped
         </button>
-      </div>
-
-      {/* <div>
-        <Words />
-        {render(
-          <WordCloud data={data} width={300} height={300} fontSize={5} />,
-          document.getElementById("root")
-        )}
       </div> */}
+
+      <div>
+        {/* <ReactWordcloud words={data} /> */}
+        <Words />
+      </div>
     </div>
   );
 };
